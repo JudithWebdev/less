@@ -1,0 +1,171 @@
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 100px;
+  text-align: center;
+  color: #e97171;
+}
+
+.bg-light {
+  font-size: 12px;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.search {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#nav1 .nav-item .nav-link {
+  border-right: rgba(0, 0, 0, 0.5) solid 1px;
+}
+
+#nav1 .nav-item .dropdown-toggle {
+  border-right: none;
+}
+
+#nav2 {
+  width: 56%;
+  font-size: 14px;
+}
+
+#nav2 #title {
+  color: #e97171;
+}
+
+#nav2 input::placeholder {
+  font-size: 14px;
+  text-align: left;
+}
+
+#nav2 .user-div a {
+  color: black;
+}
+
+.nav-link-black-bold,
+#nav3 .nav-item .nav-link,
+#nav4 .nav-link {
+  font-weight: 600;
+  color: black;
+  margin-right: 10px;
+}
+
+#nav3 {
+  overflow: visible;
+}
+
+#nav3 .nav-item .active {
+  color: rgba(0, 0, 0, 0.9);
+  border-bottom: #e97171 2px solid;
+}
+
+#nav4 {
+  display: block;
+  padding: 0;
+  margin-left: 110px;
+}
+
+#nav4 .nav-link {
+  margin-right: -50px;
+  padding: 10px;
+  padding-right: 50px;
+}
+
+#nav4 .nav-link:hover {
+  background-color: #f8f9fa;
+}
+
+#nav4 .active {
+  background-color: #f8f9fa;
+}
+
+#main .product-container {
+  width: 57%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#main .product-container img {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.dark-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-background::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #000000;
+  background: transparent\9;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+#collapse-articles {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: 3;
+}
+
+#collapse-articles #articles-menu-grid {
+  display: grid;
+  grid-template-columns: 350px 675px 1fr;
+}
+
+#collapse-articles #articles-menu-grid #product-details {
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+#collapse-articles #articles-menu-grid #product-details .navbar-nav .product-title .nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+#collapse-articles #articles-menu-grid #vtwonen-discover {
+  width: 300px;
+}
+
+#furniture,
+#lighting,
+#decoration {
+  display: none;
+}
+
+.grid {
+  width: 675px;
+  height: 800px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid .grid-item {
+  width: 200px;
+  float: left;
+}

@@ -1,0 +1,265 @@
+@import "bootstrap-less-port/less/_functions";
+@import "bootstrap-less-port/less/_variables";
+@import "bootstrap-less-port/less/_mixins";
+
+// VARIABLES
+@brand-color: #e97171;
+@light-grey-background: #f8f9fa;
+@grey-text: rgba(0, 0, 0, .5);
+
+
+@nav-item: nav-item;
+@nav-link: nav-link;
+
+
+
+@nav1: nav1;
+@nav2: nav2;
+@nav3: nav3;
+@nav4: nav4;
+
+@product-container: product-container;
+
+@collapse-articles: collapse-articles;
+
+@articles-menu-grid: articles-menu-grid;
+
+
+
+@discover-div: vtwonen-discover;
+
+@main-content: main;
+
+
+
+@product-details: product-details;
+
+@furniture: furniture;
+@lighting: lighting;
+@decoration: decoration;
+
+@masonry-grid: grid;
+@masonry-grid-item: grid-item;
+
+
+
+
+
+// GENERAL
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 100px;
+    text-align: center;
+    color: @brand-color;
+}
+
+.bg-light {
+    font-size: 12px;
+}
+
+
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.search {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+// NAV 1
+
+#@{nav1} .@{nav-item} {
+    .@{nav-link} {
+        border-right: @grey-text solid 1px;
+    }
+
+    .dropdown-toggle {
+        border-right: none;
+    }
+
+}
+
+//NAV 2
+
+#@{nav2} {
+    width: 56%;
+    font-size: 14px;
+
+    #title {
+        color: @brand-color;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .user-div {
+        a {
+            color: black;
+        }
+
+    }
+
+}
+
+
+
+
+
+// NAV 3
+
+.nav-link-black-bold {
+    font-weight: 600;
+    color: black;
+    margin-right: 10px;
+}
+
+#@{nav3} {
+    overflow: visible;
+
+    .@{nav-item} {
+        .active {
+            color: rgba(0, 0, 0, .9);
+            border-bottom: @brand-color 2px solid;
+        }
+
+        .@{nav-link} {
+            &:extend(.nav-link-black-bold);
+        }
+    }
+}
+
+// NAV 4
+
+#@{nav4} {
+    display: block;
+    padding: 0;
+    margin-left: 110px;
+
+    .@{nav-link} {
+        &:extend(.nav-link-black-bold);
+
+        &:hover {
+            background-color: @light-grey-background;
+        }
+
+        margin-right: -50px;
+        padding: 10px;
+        padding-right: 50px;
+
+    }
+
+    .active {
+        background-color: @light-grey-background;
+    }
+
+
+}
+
+//PRODUCT CONTAINER
+
+#@{main-content} {
+    .@{product-container} {
+        width: 57%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        img {
+            width: 250px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.dark-background {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgb(0, 0, 0);
+        background: transparent\9;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    }
+}
+
+
+
+//COLAPSE MENU ARTICLES
+
+#@{collapse-articles} {
+
+    position: absolute;
+    width: 100%;
+    background-color: @white;
+    z-index: 3;
+
+    #@{articles-menu-grid} {
+        display: grid;
+        grid-template-columns: 350px 675px 1fr;
+
+        #@{product-details} {
+            background-color: @light-grey-background;
+            margin: 0;
+
+            .navbar-nav {
+
+                .product-title .nav-link {
+                    color: black;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        #@{discover-div} {
+            width: 300px;
+        }
+    }
+
+}
+
+
+#@{furniture},
+#@{lighting},
+#@{decoration} {
+    display: none;
+}
+
+// MASONRY GRID
+.@{masonry-grid} {
+    width: 675px;
+    height: 800px;
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .@{masonry-grid-item} {
+        width: 200px;
+        float: left;
+    }
+}

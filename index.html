@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="less.css">
+  <script src="masonry.js"></script>
+  <script src="js.js"></script>
+  <script src="https://use.fontawesome.com/6bf14b7455.js"></script>
+
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+
+
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT SHIPPING<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">RETURNS WITHIN 30 DAYS<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:contact@vtwonen.com">NEED HELP? Mail contact@vtwonen.com<span
+            class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CREDITS<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CORONA MEASURES<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          ENG
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">NL</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">FR</a>
+        </div>
+      </li>
+    </ul>
+
+  </nav>
+
+
+
+  <nav class="navbar mx-auto search-nav navbar-light" id="nav2">
+    <a class="navbar-brand" id="title" href="#">Vtwonen</a>
+    <form class="input-group col-md-6 mx-auto">
+      <input class="form-control amber-border" type="text" placeholder="search for" aria-label="Search">
+      <div class="input-group-append">
+        <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fa fa-search text-grey"
+            aria-hidden="true"></i></span>
+      </div>
+    </form>
+    <div class="user-div nav-item">
+      <a href="#" class="nav-link">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        Test
+      </a>
+
+    </div>
+
+    <div class="user-div nav-item">
+      <a href="#" class="nav-link">
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+
+      </a>
+
+    </div>
+
+
+  </nav>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light" id="nav3">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link hahaha" href="#">ON SALE<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GIFTS<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OUTLET<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="collapse"
+            aria-haspopup="true" aria-expanded="false" data-target="#collapse-articles">
+            HOUSE, GARDEN & LIFESTYLE
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">VIP<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOG<span class="sr-only"></span></a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+  </nav>
+
+  <div id="collapse-articles" aria-labelledby="navbarDropdown1" class="collapse">
+    <div id="articles-menu-grid">
+      <nav class="navbar navbar-light" id="nav4">
+        <ul class="navbar-nav">
+          <li class="nav-item" data-product="decoration">
+            <a class="nav-link active" id="decoration-link" href="#">Decoration & Accessoires</a>
+          </li>
+          <li class="nav-item" data-product="furniture">
+            <a class="nav-link" id="furniture-link" href="#">Furniture</a>
+          </li>
+
+          <li class="nav-item" data-product="lighting">
+            <a class="nav-link" id="lighting-link" href="#">Lighting</a>
+          </li>
+          <li class="nav-item" data-product="kitchen">
+            <a class="nav-link" href="#" id="kitchen-link">Table & Kitchen</a>
+          </li>
+          <li class="nav-item" data-product="bed-bath">
+            <a class="nav-link" href="#" id="bed-bath-link">Bed & Bath</a>
+          </li>
+          <li class="nav-item" data-product="fashion">
+            <a class="nav-link" href="#" id="fashion-link">Fashion & Lifestyle</a>
+          </li>
+          <li class="nav-item" data-product="outdoor">
+            <a class="nav-link" href="#" id="outdoor-link">Garden & Outdoor</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="product-details">
+        <div id="decoration" class="grid" style="display: block;">
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Decoration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Interior Purfumes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Candlesticks & Lanterns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ornaments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Plaids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Plants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pillows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rugs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Home Decoration</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Wall Decoration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wallpaper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clocks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mirrors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wall Decoration</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Vtwonen Collection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vtwonen Vases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vtwonen Pillows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vtwonen Rugs</a>
+              </li>
+            </ul>
+
+          </div>
+
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Shop By Style</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bohemian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Industrial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Modern</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Modern Classic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Scandinavian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Retro</a>
+              </li>
+            </ul>
+
+          </div>
+
+
+
+        </div>
+        <div id="furniture" class="grid">
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Cabinets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bedside Tables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bookcases & Shelves</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cabinets</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Racks & Shelves</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shoe Storage</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sideboards</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Stands</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Beds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Double Beds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids Beds</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Kids Furniture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids Furniture</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Sofas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">1 Seater Sofas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">2 Seater Sofas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">2,5 Seater Sofas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">3 Seater Sofas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Corner Sofas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Daybed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sofa Bed</a>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Chairs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bar Stools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beanbags</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dining Chairs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lounge Chairs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Office Chairs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Poufs & Benches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rocking Chairs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Tables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coffee & Side Tables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Desks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dining Tables Accessoires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dining Table Sets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dining Tables</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+
+
+
+        </div>
+        <div id="lighting" class="grid">
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Indoor Lighting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bathroom Lighting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Desk Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Party Lighting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pendant Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chandeliers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LED-lighting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ceiling Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Spots</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Table Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Floor Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wall Lamps</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Accessoires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lampshades & Accessoires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Light Sources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Switches & Sensors</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="navbar navbar-light grid-item">
+            <ul class="navbar-nav">
+              <li class="nav-item product-title">
+                <a class="nav-link" href="#">Outdoor Lighting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wall Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pendant Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sensor Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Solar Lamps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ground Spots</a>
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+      <div id="discover">
+        <img id="vtwonen-discover" src="img/vtwonen.png" alt="">
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div id="main">
+
+    <h1>Discover our new products!</h1>
+
+    <div class="product-container">
+
+      <img src="./img/less1.jpeg" alt="">
+      <img src="./img/less2.jpeg" alt="">
+      <img src="./img/less3.jpeg" alt="">
+
+      <img src="./img/less4.jpeg" alt="">
+      <img src="./img/less5.jpeg" alt="">
+      <img src="./img/less6.jpeg" alt="">
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
