@@ -63,8 +63,7 @@ h1 {
   overflow: visible;
 }
 
-#nav3 .nav-item .active {
-  color: rgba(0, 0, 0, 0.9);
+#nav3 .nav-item:hover {
   border-bottom: #e97171 2px solid;
 }
 
@@ -150,13 +149,12 @@ h1 {
 
 #furniture,
 #lighting,
-#decoration {
+’ #decoration {
   display: none;
 }
 
 .grid {
   width: 675px;
-  height: 800px;
 }
 
 .grid:after {
